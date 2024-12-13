@@ -1,0 +1,261 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.menu_bar ul li {
+        margin-left: 15px;
+    }
+    .menu_bar ul li a {
+        font-size: 18px;
+    }
+    .banner_button .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    .service_part .service_content p {
+        font-size: 20px;
+    }
+    .title_content p {
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .doctor_team .doctor_content h3 {
+        font-size: 50px;
+    }
+    footer .footer_left ul li a,
+    footer .footer_center ul li a {
+        font-size: 18px;
+    }
+	
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	header .logo img {
+        width: 70%;
+    }
+    .menu_bar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_bar ul li {
+        margin: 10px 0;
+    }
+    .banner {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .banner .banner_content h1 {
+        font-size: 36px;
+    }
+    .banner .banner_img img {
+        transform: none;
+        width: 100%;
+    }
+    .service_img::after {
+        width: 150px;
+        height: 150px;
+        left: -20px;
+        bottom: -20px;
+    }
+    .title_text h3,
+    .title_text p {
+        font-size: 18px;
+    }
+    footer .footer_right .doctor_icon ul li {
+        margin-left: 12px;
+    }
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.menu_bar {
+        transform: translateY(0);
+    }
+	.menu_bar ul {
+		display: block;
+	}
+	.menu_bar ul li {
+		margin: 10px 11px;
+	}
+	.w-100 {
+		width: 83%!important;
+		margin-left: 46px;
+	}
+    .banner .banner_content h1 {
+		font-size: 40px;
+		transform: translateX(-80px);
+	}
+    .banner .banner_content p {
+		font-size: 21px;
+	}
+	.banner .banner_img img {
+		margin-top: 38px;
+	}
+    .service_part {
+        padding: 50px 0;
+    }
+    .service_part .service_content h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+    .service_part .service_content p {
+		font-size: 22px;
+		text-align: center;
+		width: 100%;
+	}
+	.service_part .service_button .btn {
+		margin-left: 129px;
+		margin-bottom: 70px;
+	}
+	.img {
+		width: 68%!important;
+		margin-left: 103px;
+	}
+	.service_img::after {
+		width: 175px;
+		height: 175px;
+		left: 61px;
+		bottom: -33px;
+	}
+	.title_part .title_content p {
+		padding-left: 0px;
+		font-size: 23px;
+		width: 486px;
+	}
+	.title {
+		padding: 70px 68px 50px;
+	}
+	.title_img {
+		padding: 70px 68px 50px;
+		margin-left: 72px;
+		margin-bottom: 26px;
+	}
+	.title_text h3, .title_text p {
+		font-size: 23px;
+	}
+	.vedio {
+		width: 63%!important;
+		margin-left: 46px;
+	}
+	.service_part .vedio_img::after {
+		left: 180px;
+		bottom: -30px;
+	}
+	.service_part .vedio_content .vedio_text p {
+		transform: translateX(-2px);
+		text-align: center;
+	}
+	.service_part .service_button .btn_two {
+		transform: translateX(-157px);
+	}
+	.doctor_icon{
+		transform: translateX(68px);
+	}
+	.doctor_img{
+		margin-left: 70px;
+	}
+    .client_text h3 {
+		font-style: 22px;
+		padding-top: 8px;
+	}
+    .client_text h4 {
+		font-style: 16px;
+		padding-bottom: 36px;
+	}
+	.recent_shadow {
+		width: 74%;
+		margin-left: 58px;
+		margin-bottom: 50px;
+	}
+	.recent_part_img {
+		padding: 0px 0px 0px;
+	}
+	.title_img_two{
+			padding: 70px 68px 50px;
+			margin-left: 0px;
+	}
+	.recent_img .recent{
+		padding: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.footer_left{
+		margin-left: -11;
+		text-align: center;
+	}
+	.footer_center{
+		margin-left: -11;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.footer_right {
+		padding-top: 20px;
+		text-align: center;
+	}
+	.footer_right .input_btn{
+		width: 89%;
+		margin-left: 30px;
+	}
+    .footer_right .doctor_icon ul li {
+        margin: 5px;
+    }
+	.footer_right .doctor_icon {
+		float: none;
+	}
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+	
+}
+
+/* Responsive Styles */
